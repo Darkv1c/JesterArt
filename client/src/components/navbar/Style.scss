@@ -1,0 +1,22 @@
+.Container{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media screen and (max-width: 450px) {
+        min-width: 100%;
+        min-height: 96px/926px * 100vh;
+        height: 96px/926px * 100vh;  
+    }    
+    .Logo {
+        height: 60px/926px * 100vh;
+    }
+    .Menu {
+        height: 60px/926px * 100vh;
+    }      
+    h3{
+        font-family: 'the perfect christmas';
+        color: white;
+        font-size: 60px/926px * 100vh;
+    }
+}
