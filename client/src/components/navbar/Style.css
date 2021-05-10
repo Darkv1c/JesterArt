@@ -1,5 +1,6 @@
 .Container {
   background-color: black;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,11 +9,11 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  min-width: 100vw;
 }
 
 @media screen and (max-width: 450px) {
   .Container {
-    min-width: 100%;
     min-height: 10.36717vh;
     height: 10.36717vh;
   }
@@ -28,7 +29,11 @@
 
 .Container h3 {
   font-family: 'the perfect christmas';
-  color: white;
-  font-size: 6.47948vh;
+  color: #F6EDED;
+  font-size: 5.39957vh;
+}
+
+.Container .Appbar {
+  height: 10.36717vh;
 }
 /*# sourceMappingURL=Style.css.map */

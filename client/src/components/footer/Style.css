@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=DotGothic16);
+.Footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 1.5fr;
+      grid-template-columns: 0.5fr 1.5fr;
+  position: fixed;
+  background-color: black;
+  min-height: 14.03888vh;
+  min-width: 100vw;
+  align-self: flex-end;
+}
+
+.Footer .LogoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Footer .Logo {
+  height: 6.47948vh;
+  margin-top: 20%;
+}
+
+.Footer .InfoContainer {
+  color: white;
+  font-family: "DotGothic16";
+  font-size: smaller;
+  margin: 0;
+  margin-left: 10%;
+  padding: 0;
+}
+
+.Footer .InfoContainer ul {
+  list-style: none;
+  font-size: smaller;
+  color: #A29898;
+  padding: 0;
+  margin: 0;
+  margin-top: -4%;
+}
+
+.FooterSpace {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  min-height: 14.03888vh;
+  min-width: 100vw;
+}
+/*# sourceMappingURL=Style.css.map */
