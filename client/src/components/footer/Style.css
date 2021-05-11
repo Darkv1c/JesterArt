@@ -31,12 +31,14 @@
   font-size: smaller;
   margin: 0;
   margin-left: 10%;
+  margin-top: -5%;
   padding: 0;
 }
 
 .Footer .InfoContainer ul {
   list-style: none;
   font-size: smaller;
+  line-height: 10px;
   color: #A29898;
   padding: 0;
   margin: 0;
