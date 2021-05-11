@@ -5,7 +5,6 @@ import {Logo, Menu} from '../../assets/icons'
 const Navbar = () => {
     return (
         <>
-            <div className='Appbar'/>
             <div className="Container">            
                 <img className="Menu" alt="menu" src={Menu} /> 
                 <h3>JESTER-ART</h3>

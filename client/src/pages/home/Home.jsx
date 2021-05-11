@@ -1,22 +1,21 @@
 import React from 'react'
-import {Carousel} from 'react-responsive-carousel'
 import './Style.css'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Carousel} from "../../components"
 
-const C = () => {    
-  return  <Carousel autoPlay width="90%" showArrows={true} showThumbs={false}>
-        <div>
-            <img src="https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_TouhouSpellBubble_image1600w.jpg"/>
-        </div>
-        <div>
-            <img src="https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_TouhouSpellBubble_image1600w.jpg"/>
-        </div>
-    </Carousel>
-}
 const Home = () => {
     return (
         <div className="Home">
-                <C/>
+            <Carousel Key={0}>
+                <img src="https://imagen.nextn.es/wp-content/uploads/2020/11/2011-23-Touhou-Spell-Bubble-Portada.jpg?strip=all&lossy=1&ssl=1" alt="img1" />
+                <img src="https://imagen.nextn.es/wp-content/uploads/2020/11/2011-23-Touhou-Spell-Bubble-Portada.jpg?strip=all&lossy=1&ssl=1" alt="img1" />
+                <img src="https://imagen.nextn.es/wp-content/uploads/2020/11/2011-23-Touhou-Spell-Bubble-Portada.jpg?strip=all&lossy=1&ssl=1" alt="img1" />
+            </Carousel>
+            <br/>
+            <Carousel Key={1} showArrows={true}>
+                <img src="https://imagen.nextn.es/wp-content/uploads/2020/11/2011-23-Touhou-Spell-Bubble-Portada.jpg?strip=all&lossy=1&ssl=1" alt="img1" />
+                <img src="https://imagen.nextn.es/wp-content/uploads/2020/11/2011-23-Touhou-Spell-Bubble-Portada.jpg?strip=all&lossy=1&ssl=1" alt="img1" />
+                <img src="https://imagen.nextn.es/wp-content/uploads/2020/11/2011-23-Touhou-Spell-Bubble-Portada.jpg?strip=all&lossy=1&ssl=1" alt="img1" />
+            </Carousel>
         </div>
     )
 }
