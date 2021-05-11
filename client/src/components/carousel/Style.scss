@@ -1,0 +1,24 @@
+.CarouselContainer{
+
+    position: relative;
+        .Carousel {
+            max-width: 100vw;
+            display: flex;
+            overflow-x: scroll;
+            max-height: 50vh;
+            scroll-behavior: smooth;            
+        }
+        .Arrows {
+            background: rgba(0, 0, 0, 0.39);
+            min-height: 100%;
+            width: 10%;
+            position: absolute;
+            &:active{
+                background: rgba(0, 0, 0, 0.822);
+            }
+        }
+        .ArrowForward {
+            right: 0;
+        }
+
+}
