@@ -8,7 +8,7 @@
   display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
-  max-height: 50vh;
+  max-height: 30vh;
   scroll-behavior: smooth;
 }
 
