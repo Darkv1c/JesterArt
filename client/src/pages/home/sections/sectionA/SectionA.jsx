@@ -3,6 +3,16 @@ import './Style.css';
 
 const SectionA = () => {
     const links="https://i.pinimg.com/originals/81/61/f9/8161f9cb1c16e4ce0e27f62ff06e60a1.jpg"
+    let options = {
+        root: document.querySelector('.sectionA'),
+        rootMargin: '0px',
+        threshold: 1.0
+      }
+      
+    let observer = new IntersectionObserver(callback, options);
+    function callback() { console.log("ya no soy visible")}
+
+    var target = document.querySelector(".img")
     return (
         <div className="SectionA">
             <div style={{backgroundImage: `url(${links})`}} className="InfoContainer">
