@@ -4,7 +4,8 @@
   display: grid;
   -ms-grid-columns: 0.5fr 1.5fr;
       grid-template-columns: 0.5fr 1.5fr;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   background-color: black;
   min-height: 14.03888vh;
   min-width: 100vw;

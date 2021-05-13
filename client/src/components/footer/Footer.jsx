@@ -5,7 +5,6 @@ import {Logo} from '../../assets/icons'
 const Footer = () => {
     return (
         <>
-            <div className="FooterSpace"/>
             <div className="Footer">
                 <div className="LogoContainer">
                     <img className="Logo" alt="Logo" src={Logo}/>

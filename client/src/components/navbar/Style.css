@@ -1,44 +1,129 @@
 .Container {
-  background-color: black;
-  position: fixed;
+  background-color: #0f0f0f;
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  min-width: 100vw;
-}
-
-@media screen and (max-width: 450px) {
-  .Container {
-    min-height: 10.36717vh;
-    height: 10.36717vh;
-  }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100px;
 }
 
 .Container .Logo {
-  height: 6.47948vh;
+  height: 50px;
+  margin-left: 30px;
+}
+
+.Container .Logo:hover {
+  cursor: pointer;
 }
 
 .Container .Menu {
-  height: 6.47948vh;
+  display: none;
+}
+
+.Container .Menu:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .Container .Menu {
+    display: unset;
+    height: 50px;
+    margin-right: 30px;
+  }
 }
 
 .Container h3 {
   font-family: 'the perfect christmas';
   color: #F6EDED;
-  font-size: 5.39957vh;
+  font-size: 40px;
 }
 
-.Appbar {
-  min-height: 20vh;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  background-color: blue;
-  min-width: 100vw;
-  margin: 0;
+.Container h3:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .Container .HideOptions {
+    left: -100%;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+
+.Container .ShowOptions {
+  left: 0%;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Container .Options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 30px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .Container .Options {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(15, 15, 15, 0.808);
+    padding: 0;
+    width: 100%;
+    top: 70px;
+  }
+}
+
+.Container .Options li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 15px;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .Container .Options li {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 70px;
+  }
+  .Container .Options li:active {
+    background-color: #F6EDED;
+  }
+}
+
+.Container .Options li:hover {
+  background-color: #F6EDED;
+  color: black;
+  cursor: pointer;
 }
 /*# sourceMappingURL=Style.css.map */
