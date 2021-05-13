@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
 .Container{
     background-color: rgb(15, 15, 15);
     position: sticky;
@@ -25,9 +27,10 @@
         }
     }
     h3{
-        font-family: 'the perfect christmas';
+        font-family: 'the perfect christmas', 'Lobster';
         color: #F6EDED;
         font-size: 40px;
+        s
         &:hover{
             cursor: pointer;
         }
@@ -65,9 +68,6 @@
                 width: 100%;
                 justify-content: center;
                 height: 70px;
-                &:active {
-                    background-color: #F6EDED;
-                }
             }
             display: flex;
             align-items: center;
