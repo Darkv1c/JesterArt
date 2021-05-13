@@ -7,6 +7,15 @@
   padding: 8%;
   padding-top: 3%;
   background-color: rgba(0, 0, 0, 0.527);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SectionA .TransitionGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .SectionA .InfoContainer {
@@ -22,6 +31,7 @@
   background-size: cover;
   background: center center;
   border-radius: 27px;
+  min-width: 100%;
 }
 
 @media screen and (max-width: 900px) {
@@ -76,25 +86,31 @@
   }
 }
 
-@-webkit-keyframes appear {
-  from {
-    right: 100%;
-    opacity: 0;
-  }
-  to {
-    right: 0;
-    opacity: 1;
-  }
+.slide-enter {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
-@keyframes appear {
-  from {
-    right: 100%;
-    opacity: 0;
-  }
-  to {
-    right: 0;
-    opacity: 1;
-  }
+.slide-enter-active {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.slide-exit {
+  opacity: 1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.slide-exit-active {
+  opacity: 0;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
 }
 /*# sourceMappingURL=Style.css.map */
