@@ -3,11 +3,12 @@
 .Container{
     background-color: rgb(15, 15, 15);
     position: sticky;
+    top: 0%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
+    height: 85px;
     .Logo {
         height: 50px;
         margin-left: 30px;
@@ -54,6 +55,7 @@
             flex-direction: column;
             background-color: rgba(15, 15, 15, 0.808);
             padding: 0;
+            margin: 0;
             width: 100%;
             top: 70px;
         }   

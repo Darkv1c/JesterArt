@@ -1,14 +1,16 @@
 import React from 'react'
 import './Style.css'
-import {Carousel} from "../../components"
+import {SectionA, SectionB} from './sections'
 
 const Home = () => {
     return (
-        <div className="Home">
-           <div className="SectionA">
-
-           </div>
-        </div>
+        <>
+            <img className="a" src="https://blog.hostalia.com/wp-content/uploads/2013/02/geometrio-gif-blog-de-hostalia-hosting.gif" alt="" />   
+            <div className="Home">  
+                <SectionA/>  
+                <SectionB/>
+            </div>
+        </>
     )
 }
 

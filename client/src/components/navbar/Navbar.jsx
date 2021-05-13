@@ -6,18 +6,9 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
     const [click, setClick] = useState(false)
-    const [desktop, setDesktop] = useState(false)
 
     const handleClick = () => {
         setClick(!click);
-    }
-
-    useEffect(() => {
-        setDesktop(window.innerWidth>900)
-    }, [])
-
-    window.onresize = () => {
-        setDesktop(window.innerWidth>900)
     }
 
 

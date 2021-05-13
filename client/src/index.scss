@@ -7,7 +7,21 @@ body, html, .App{
     max-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: black;
+  }
 
 
