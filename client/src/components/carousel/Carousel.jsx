@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Style.css'
 import {ArrowBack, ArrowForward} from '../../assets/icons'
 
-const Carousel = ({width="100%", height, showArrows=true, children, Key, borderRadius="0px"}) => {
+const Carousel = ({width="100%", height, showArrows=true, children, Key, borderRadius="0px", touchAction}) => {
     const [current, setCurrent] = useState(0)
     const [touchStart, setTouchStart] = useState(0);
     const [touchEnd, setTouchEnd] = useState(false);
@@ -17,17 +17,18 @@ const Carousel = ({width="100%", height, showArrows=true, children, Key, borderR
     
     function handleTouchEnd(e) {  
         let move = touchStart - touchEnd;
-        if (touchEnd===false) return;  
+        if (touchEnd===false) return; 
         setTouchEnd(false);
         setTouchStart(0);
         if (move > 50) {
-            forward();
+            return forward();
         }
         
         if (move < -50) {
-            back();
+            return back();
         }
         window.location="#element"+Key+"a"+(current);
+        e.target.style.touchAction="unset";
     }
 
     const back = () => {
@@ -52,6 +53,7 @@ const Carousel = ({width="100%", height, showArrows=true, children, Key, borderR
             <div onTouchStart={e => handleTouchStart(e)} 
                 onTouchMove={e => handleTouchMove(e)} 
                 onTouchEnd={(e) => handleTouchEnd(e)} 
+                style={{touchAction}}
                 className="Carousel">
                 {children.map((e, i)=> ({
                     ...e, props: {

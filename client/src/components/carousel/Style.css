@@ -10,8 +10,6 @@
   overflow-x: scroll;
   max-height: 30vh;
   scroll-behavior: smooth;
-  -ms-touch-action: none;
-      touch-action: none;
 }
 
 .CarouselContainer .Arrows {

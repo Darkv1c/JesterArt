@@ -5,11 +5,12 @@ body, html, .App {
           box-sizing: border-box;
   min-width: 100vw;
   min-height: 100vh;
+  max-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow: hidden;
 }
 /*# sourceMappingURL=index.css.map */

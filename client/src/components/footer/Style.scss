@@ -3,7 +3,7 @@
 .Footer{
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
-    position: fixed;
+    position: sticky;
     background-color: black;
     min-height: 130px/926px * 100vh;
     min-width: 100vw;

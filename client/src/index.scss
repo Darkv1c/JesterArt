@@ -4,9 +4,10 @@ body, html, .App{
     box-sizing: border-box;
     min-width: 100vw;
     min-height: 100vh;
+    max-height: 100vh;
     display: flex;
-    overflow: hidden;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 
