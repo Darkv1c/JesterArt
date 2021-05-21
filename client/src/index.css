@@ -16,6 +16,7 @@ body, html, .App {
 
 ::-webkit-scrollbar {
   width: 7px;
+  background-color: white;
 }
 
 /* Track */
@@ -26,5 +27,32 @@ body, html, .App {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: black;
+}
+
+.pageSlide-enter {
+  position: absolute;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.pageSlide-enter-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.pageSlide-exit {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.pageSlide-exit-active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 /*# sourceMappingURL=index.css.map */

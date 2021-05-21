@@ -12,6 +12,7 @@ body, html, .App{
 
 ::-webkit-scrollbar {
     width: 7px;
+    background-color: white;
   }
   
   /* Track */
@@ -24,4 +25,21 @@ body, html, .App{
     background-color: black;
   }
 
+  //transitions
 
+  .pageSlide-enter{
+      position: absolute;
+      transform: translateX(100%);
+      transition: all 1s;
+    }
+    .pageSlide-enter-active{
+      transform: translateX(0%);
+      transition: all 1s;
+    }
+  .pageSlide-exit{
+      transform: translateX(0%);
+      transition: all 1s;
+    }
+  .pageSlide-exit-active{
+      transform: translateX(-100%)
+    }
