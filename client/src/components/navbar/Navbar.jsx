@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Style.css'
 import {Logo, Menu, Close} from '../../assets/icons'
 import { Link } from 'react-router-dom'
