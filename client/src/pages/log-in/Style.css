@@ -1,0 +1,128 @@
+.LogIn {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0f0f0f;
+}
+
+.LogIn #LoginImg {
+  min-height: 100vh;
+}
+
+.LogIn .formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  width: 63%;
+}
+
+.LogIn .formContainer form {
+  text-align: center;
+  color: white;
+  width: 30%;
+}
+
+.LogIn .formContainer form h2 {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.LogIn .formContainer form h4 {
+  margin-bottom: 0.2rem;
+  font-size: 18px;
+  text-align: left;
+}
+
+.LogIn .formContainer form input {
+  outline: none;
+  font-size: 18px;
+  font-family: Patrick Hand;
+  text-align: center;
+  border-radius: 27px;
+  border-color: transparent;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+.LogIn .formContainer form .Button {
+  opacity: 1;
+  margin-top: 2%;
+  background-color: white;
+  cursor: pointer;
+  width: 50%;
+}
+
+.LogIn .formContainer form .Button:hover {
+  -webkit-animation-name: switchColor;
+          animation-name: switchColor;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.LogIn .formContainer form .Button:active {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 900px) {
+  .LogIn {
+    background-image: url(http://static.zerochan.net/Rolling.Girl.full.1079511.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .LogIn #LoginImg {
+    display: none;
+  }
+  .LogIn .formContainer {
+    width: 100%;
+  }
+  .LogIn .formContainer form {
+    background-color: rgba(15, 15, 15, 0.507);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 7%;
+    width: 80%;
+    border-radius: 10px;
+  }
+}
+
+@-webkit-keyframes switchColor {
+  from {
+    -webkit-box-shadow: 0px 0px 20px 0px white;
+            box-shadow: 0px 0px 20px 0px white;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 20px 0px #3ad0eb;
+            box-shadow: 0px 0px 20px 0px #3ad0eb;
+  }
+}
+
+@keyframes switchColor {
+  from {
+    -webkit-box-shadow: 0px 0px 20px 0px white;
+            box-shadow: 0px 0px 20px 0px white;
+  }
+  to {
+    -webkit-box-shadow: 0px 0px 20px 0px #3ad0eb;
+            box-shadow: 0px 0px 20px 0px #3ad0eb;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
