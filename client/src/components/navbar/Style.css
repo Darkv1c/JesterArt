@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster|Playball);
 .Container {
-  background-color: #0f0f0f;
-  position: -webkit-sticky;
-  position: sticky;
+  background: transparent;
+  position: fixed;
   top: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,12 +45,18 @@
 
 .Container h3 {
   font-family: 'the perfect christmas', Playball, 'Lobster';
-  color: #F6EDED;
+  color: #0f0f0f;
   font-size: 40px;
 }
 
 .Container h3:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .Container h3 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -124,7 +129,7 @@
 }
 
 .Container .Options li:hover {
-  background-color: #F6EDED;
+  background-color: white;
   color: black;
   cursor: pointer;
 }

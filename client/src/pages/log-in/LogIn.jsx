@@ -11,7 +11,7 @@ const LogIn = () => {
                     <h4>Correo/Usuario</h4>
                     <input />
                     <h4>Contraseña</h4>
-                    <input />
+                    <input type="password"/>
                     <br/>
                     <br/>
                     <input className='Button'  type = "submit" value="ENTRAR"/>
