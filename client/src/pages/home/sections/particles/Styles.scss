@@ -1,0 +1,107 @@
+
+.particlesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    animation-name: translate;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.particlesContainer2{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    animation-name: rotate;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.particlesContainer3{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    animation-name: translate2;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.particlesContainer4{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    animation-name: rotate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.oneParticle{
+    position: absolute;
+    padding-right: 100px;
+    padding-top: 100px;
+    top: random($limit: 100);
+    left: random($limit: 100);
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.particle{
+    display: inline-block;
+    padding: 6px;
+    background-color: gold;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 3px  gold;
+    animation-name: translate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    opacity: 0.5;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+        width: 0%;
+    }
+    to {
+        transform: rotate(360deg);
+        width: 100%
+    }    
+}
+
+@keyframes translate {
+    from{
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(50%);
+    }    
+}
+@keyframes translate2 {
+    from{
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(50%);
+    }    
+}

@@ -4,7 +4,6 @@ import './Style.scss'
 const SectionB = () => {
     return (
         <div className="SectionB">
-            
         </div>
     )
 }

@@ -1,10 +1,6 @@
 .SectionA {
   width: 100vw;
   min-height: 100vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 8%;
-  padding-top: 1%;
   background-color: rgba(0, 0, 0, 0.527);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,10 +20,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  min-height: 80vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center center;
-  border-radius: 27px;
   min-width: 100%;
 }
 
@@ -57,7 +52,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.616);
+  background-color: rgba(255, 255, 255, 0.685);
 }
 
 @media screen and (max-width: 900px) {
@@ -75,13 +70,23 @@
   display: -ms-flexbox;
   display: flex;
   min-width: 100%;
-  background-position: top center;
+  background-position: 0 .SectionA .InfoContainer .img 0%;
+  background-size: auto 100%;
 }
 
 @media screen and (max-width: 900px) {
   .SectionA .InfoContainer .img {
     display: none;
   }
+}
+
+.SectionA .gradient {
+  pointer-events: none;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#0f0f0f));
+  background: linear-gradient(to bottom, transparent, transparent, #0f0f0f);
 }
 
 .slide-enter {

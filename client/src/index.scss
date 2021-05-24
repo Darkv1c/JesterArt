@@ -11,11 +11,12 @@ body, html, .App{
     flex-wrap: wrap;
     overflow-x: hidden;
     font-family: Patrick Hand;
+    background-color: rgb(15, 15, 15);
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
-    background-color: white;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.089);
   }
   
   /* Track */
