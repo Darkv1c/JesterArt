@@ -1,15 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Styles.css'
 
 function Particles() {
-
-    const [x, setX] = useState(Math.random()*100)
-    const [y, setY] = useState(Math.random()*100)
-
-    setInterval(() => {
-        setX(Math.random()*100);
-        setY(Math.random()*100)
-    }, 500)
 
     return (
         <>
