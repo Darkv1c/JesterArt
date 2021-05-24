@@ -70,13 +70,23 @@
   display: -ms-flexbox;
   display: flex;
   min-width: 100%;
-  background-position: top center;
+  background-position: 0 .SectionA .InfoContainer .img 0%;
+  background-size: auto 100%;
 }
 
 @media screen and (max-width: 900px) {
   .SectionA .InfoContainer .img {
     display: none;
   }
+}
+
+.SectionA .gradient {
+  pointer-events: none;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(#0f0f0f));
+  background: linear-gradient(to bottom, transparent, transparent, #0f0f0f);
 }
 
 .slide-enter {

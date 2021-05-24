@@ -4,7 +4,7 @@ import './Style.css'
 const LogIn = () => {
     return (
         <div className="LogIn">
-            <img id="LoginImg" src="http://static.zerochan.net/Rolling.Girl.full.1079511.jpg" alt="Login" />
+            <img id="LoginImg" src="https://i.pinimg.com/564x/ca/ec/50/caec506f48c025c55aa2700277994a60.jpg" alt="Login" />
             <div className="formContainer">
                 <form>
                     <h2>INGRESAR</h2>

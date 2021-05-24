@@ -8,7 +8,7 @@
 }
 
 .LogIn #LoginImg {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .LogIn .formContainer {
@@ -84,7 +84,7 @@
 
 @media screen and (max-width: 900px) {
   .LogIn {
-    background-image: url(http://static.zerochan.net/Rolling.Girl.full.1079511.jpg);
+    background-image: url(https://i.pinimg.com/564x/ca/ec/50/caec506f48c025c55aa2700277994a60.jpg);
     background-size: cover;
     background-position: center center;
   }
