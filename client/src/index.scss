@@ -14,8 +14,12 @@ body, html, .App{
     background-color: rgb(15, 15, 15);
 }
 
+.App{
+  max-height: unset;
+}
+
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     background-color: rgba(255, 255, 255, 0.089);
   }
   
@@ -26,13 +30,14 @@ body, html, .App{
 
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-color: black;
+    background: rgba(255, 255, 255, 0.753);
   }
 
   //transitions
 
   .pageSlide-enter{
-      position: absolute;
+      position: fixed;
+      pointer-events: none;
       transform: translateX(100%);
       transition: all 1s;
     }
@@ -40,10 +45,12 @@ body, html, .App{
       transform: translateX(0%);
       transition: all 1s;
     }
-  .pageSlide-exit{
+    .pageSlide-exit{
+      pointer-events: none;
       transform: translateX(0%);
       transition: all 1s;
     }
-  .pageSlide-exit-active{
+    .pageSlide-exit-active{
+      position: fixed;
       transform: translateX(-100%)
     }

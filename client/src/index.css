@@ -17,8 +17,12 @@ body, html, .App {
   background-color: #0f0f0f;
 }
 
+.App {
+  max-height: unset;
+}
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   background-color: rgba(255, 255, 255, 0.089);
 }
 
@@ -29,11 +33,12 @@ body, html, .App {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: black;
+  background: rgba(255, 255, 255, 0.753);
 }
 
 .pageSlide-enter {
-  position: absolute;
+  position: fixed;
+  pointer-events: none;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: all 1s;
@@ -48,6 +53,7 @@ body, html, .App {
 }
 
 .pageSlide-exit {
+  pointer-events: none;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   -webkit-transition: all 1s;
@@ -55,6 +61,7 @@ body, html, .App {
 }
 
 .pageSlide-exit-active {
+  position: fixed;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
 }
