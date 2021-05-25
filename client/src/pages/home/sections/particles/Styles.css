@@ -4,15 +4,15 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: absolute;
+  position: fixed;
   min-width: 100%;
   min-height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   pointer-events: none;
   -webkit-animation-name: translate;
           animation-name: translate;
@@ -30,12 +30,12 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: absolute;
+  position: fixed;
   min-width: 100%;
   min-height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -47,6 +47,8 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .particlesContainer3 {
@@ -55,7 +57,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: absolute;
+  position: fixed;
   min-width: 100%;
   min-height: 100%;
   -webkit-box-pack: center;
@@ -72,6 +74,8 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .particlesContainer4 {
@@ -80,15 +84,15 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: absolute;
+  position: fixed;
   min-width: 100%;
   min-height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   pointer-events: none;
   -webkit-animation-name: rotate;
           animation-name: rotate;
@@ -98,14 +102,16 @@
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .oneParticle {
-  position: absolute;
+  position: fixed;
   padding-right: 100px;
   padding-top: 100px;
-  top: 89;
-  left: 61;
+  top: 27;
+  left: 19;
   -webkit-animation-name: rotate;
           animation-name: rotate;
   -webkit-animation-duration: 10s;
@@ -137,11 +143,13 @@
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     width: 0%;
+    opacity: 0;
   }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     width: 100%;
+    opacity: 1;
   }
 }
 
@@ -150,11 +158,13 @@
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     width: 0%;
+    opacity: 0;
   }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     width: 100%;
+    opacity: 1;
   }
 }
 

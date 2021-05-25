@@ -2,11 +2,11 @@
 .particlesContainer{
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
     min-width: 100%;
     min-height: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     pointer-events: none;
     animation-name: translate;
     animation-duration: 7s;
@@ -16,21 +16,22 @@
 .particlesContainer2{
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
     min-width: 100%;
     min-height: 100%;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     pointer-events: none;
     animation-name: rotate;
     animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+    animation-delay: 1s;
 }
 .particlesContainer3{
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
     min-width: 100%;
     min-height: 100%;
     justify-content: center;
@@ -40,23 +41,25 @@
     animation-duration: 11s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+    animation-delay: 2s;
 }
 .particlesContainer4{
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: fixed;
     min-width: 100%;
     min-height: 100%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     pointer-events: none;
     animation-name: rotate;
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-delay: 3s;
 }
 .oneParticle{
-    position: absolute;
+    position: fixed;
     padding-right: 100px;
     padding-top: 100px;
     top: random($limit: 100);
@@ -82,10 +85,12 @@
     from{
         transform: rotate(0deg);
         width: 0%;
+        opacity: 0;
     }
     to {
         transform: rotate(360deg);
-        width: 100%
+        width: 100%;
+        opacity: 1;
     }    
 }
 
